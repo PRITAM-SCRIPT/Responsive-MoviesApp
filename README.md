@@ -62,7 +62,7 @@ If you want to contribute to this project, feel free to submit a pull request or
 ## Contact
 
 For any inquiries or issues, please contact:
-- Your Name: [Pritam Waghoskar](pritamwaghoskar@gmail.com)
+- Your Name: (pritamwaghoskar@gmail.com)
 - GitHub: [PRITAM-SCRIPT](https://github.com/PRITAM-SCRIPT)
 - MoviesHub: (https://pritam-script.github.io/Responsive-MoviesApp/)
 
