@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: linear-gradient(to top, #ccccff 0%, #ccffff 100%);
+}
+nav{
+    background-color: rgb(172, 18, 18);
+    color: white;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px;
+}
+.search-box input,button{
+    border: none;
+    padding: 7px 14px;
+}
+.search-box input{
+    border-radius: 4px 0px 0px 4px;
+}
+.search-box button{
+    border-radius: 0px 4px 4px 0px;
+    background-color: rgb(226, 179, 39); 
+    transition:  all 0.2s;
+    cursor: pointer;
+    
+}
+.search-box button:hover{
+    background-color: rgb(233, 233, 167);   
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 42px;
+}
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.main-box{
+    display: flex;
+    background: #fff;
+    box-shadow: 0px 0px 10px #ccc;
+    width: 80%;
+    border-radius: 10px;
+    justify-content: center;
+}
+.movie-poster img{
+    height: 450px;
+    margin-right: 32px;
+    border-radius: 5px 0px 0px 5px ;
+    margin: 20px 0px 12px 7px;
+}
+.movie-info{
+    padding-inline: 15px;
+}
+.movie-info p{
+    font-size: 18px;
+    margin-block: 16px;
+    line-height: 24px;
+   
+}
+.movie-info h2{
+    text-align: center;
+    font-size: 30px;
+}
+.movie-info h2+p{
+    text-align: center;
+}
+.movie-info .movie-genre p{
+    background-color: rgb(172, 18, 18);
+    color: #fff;
+    padding: 5px 12px;
+    margin-inline: 4px;
+    border: 2px solid #0000;
+    border-radius: 7px;
+    font-weight: 600;
+
+
+}
+.movie-info .movie-genre{
+    display: flex;
+    justify-content: center;
+    margin-block: 5px;
+    overflow-x: auto;
+}
+footer{
+    text-align: center;
+    background-color: rgb(172, 18, 18);
+    color: white;
+    padding-block: 20px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+.main-box.nobackground{
+    background: none;
+    box-shadow: none;
+    align-items: center;
+}
+@media  screen and (max-width:950px) {
+    .main-box{
+        flex-direction: column;
+    }
+    .movie-poster img{
+        width: 97%;
+        height: fit-content;
+        margin-right: 0;
+    }
+    .movie-info{
+        padding-inline:  30px;
+
+    }
+    
+}
+@media  screen and (max-width:630px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-box{
+        margin-top: 10px;
+
+    }
+}
